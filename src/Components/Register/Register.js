@@ -15,7 +15,7 @@ const Register = ({ onRouteChange,loadUser }) => {
 		setInput({...input,registerPassword:evt.target.value})
 	}
 	const onSubmit = () => {
-		fetch('http://localhost:3000/register', {
+		fetch('https://limitless-river-01934.herokuapp.com/register', {
 			method: 'post',
 			headers: { 'content-type': 'application/json' },
 			body: JSON.stringify({
